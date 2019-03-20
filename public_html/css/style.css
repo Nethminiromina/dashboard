@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 11, 2019, 5:04:36 AM
+    Author     : ASUS
+*/
+
+body{
+    background: url(../img/background_img.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+}
+
+.upbox{
+    height: 30%;
+}
+
+.myhome{
+    text-align: center;
+    padding: 5%;
+    margin-top: 5%;
+    width: 40%;
+    height: auto;
+    /*font-family: cursive;*/
+    font-size: large;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.link{
+    color: green;
+    font-weight: bold
+}
+
+.login:hover{
+    text-transform: uppercase;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+.login-box {
+    text-align: justify;
+}

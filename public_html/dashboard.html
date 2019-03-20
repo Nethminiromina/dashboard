@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
+        <link rel="stylesheet" href="css/style.css" type="text/css" >
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style>
+            a {
+                background: #ccc;
+                cursor: pointer;
+                border-top: solid 2px #eaeaea;
+                border-left: solid 2px #eaeaea;
+                border-bottom: solid 2px #777;
+                border-right: solid 2px #777;
+                padding: 5px 5px;
+            }
+
+            a.down {
+                background: #bbb;
+                border-top: solid 2px #777;
+                border-left: solid 2px #777;
+                border-bottom: solid 2px #eaeaea;
+                border-right: solid 2px #eaeaea;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-expand-lg navbar-dark bg-light justify-content-between">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+<!--                    <button class="btn btn-outline-dark" value="Logout" type="submit">Logout</button>-->
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <button class="btn btn-outline-dark" value="Logout" type="submit">Logout</button>
+            </span>
+        </div>
+        <div class="container myhome">
+                <table class="table">
+                    <tr>
+                        <td colspan="2">
+                            <h3>Dashboard</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Option 01</label>
+                        </td>
+                        <td>
+                            <a class="btn btn-success" id="button" title="button">Press Me</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Option 02</label>
+                        </td>
+                        <td>
+                            <a class="btn btn-success" id="button" title="button">Press Me</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Option 03</label>
+                        </td>
+                        <td>
+                            <a class="btn btn-success" id="button" title="button">Press Me</a>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+            $('a#button').click(function () {
+                $(this).toggleClass("btn-danger");
+            });
+        });
+    </script>
+</html>
